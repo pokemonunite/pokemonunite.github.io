@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1'/>
+<meta charset="UTF-8" name='viewport' content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1'/>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
     <!-- Link Swiper's CSS -->
     <link
@@ -12,19 +12,22 @@
 	<title>Pokemon UNITE</title>
 </head>
 <body>
- <h1><img src="images/unitelogo.png"></h1>
+ <h1><img src="images/unitelogo.png" style="width: 30%"></h1>
+ 
     <div class="swiper-container mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><p class="title">Pikachu<br> Hip-Hop Style<br><img src="images/battlepass/skinlevel1.png" onmouseover="this.src='images/battlepass/skinlevel1render.png'" onmouseout="this.src='images/battlepass/skinlevel1.png'"></div>
-        <div class="swiper-slide"><p class="title">Pikachu<br> Hip-Hop Style<br><img src="images/battlepass/skinlevel1.png" onmouseover="this.src='images/battlepass/skinlevel1render.png'" onmouseout="this.src='images/battlepass/skinlevel1.png'"></div>
-        <div class="swiper-slide"><p class="title">Pikachu<br> Hip-Hop Style<br><img src="images/battlepass/skinlevel1.png" onmouseover="this.src='images/battlepass/skinlevel1render.png'" onmouseout="this.src='images/battlepass/skinlevel1.png'"></div>
-        <div class="swiper-slide"><p class="title">Pikachu<br> Hip-Hop Style<br><img src="images/battlepass/skinlevel1.png" onmouseover="this.src='images/battlepass/skinlevel1render.png'" onmouseout="this.src='images/battlepass/skinlevel1.png'"></div>	
-        <div class="swiper-slide"><p class="title">Pikachu<br> Hip-Hop Style<br><img src="images/battlepass/skinlevel1.png" onmouseover="this.src='images/battlepass/skinlevel1render.png'" onmouseout="this.src='images/battlepass/skinlevel1.png'"></div>	
-        <div class="swiper-slide"><p class="title">Pikachu<br> Hip-Hop Style<br><img src="images/battlepass/skinlevel1.png" onmouseover="this.src='images/battlepass/skinlevel1render.png'" onmouseout="this.src='images/battlepass/skinlevel1.png'"></div>	
-        <div class="swiper-slide"><p class="title">Pikachu<br> Hip-Hop Style<br><img src="images/battlepass/skinlevel1.png" onmouseover="this.src='images/battlepass/skinlevel1render.png'" onmouseout="this.src='images/battlepass/skinlevel1.png'"></div>	
-        <div class="swiper-slide"><p class="title">Pikachu<br> Hip-Hop Style<br><img src="images/battlepass/skinlevel1.png" onmouseover="this.src='images/battlepass/skinlevel1render.png'" onmouseout="this.src='images/battlepass/skinlevel1.png'"></div>	
-        <div class="swiper-slide"><p class="title">Pikachu<br> Hip-Hop Style<br><img src="images/battlepass/skinlevel1.png" onmouseover="this.src='images/battlepass/skinlevel1render.png'" onmouseout="this.src='images/battlepass/skinlevel1.png'"></div>	
-        <div class="swiper-slide"><p class="title">Pikachu<br> Hip-Hop Style<br><img src="images/battlepass/skinlevel1.png" onmouseover="this.src='images/battlepass/skinlevel1render.png'" onmouseout="this.src='images/battlepass/skinlevel1.png'"></div>		
+        <div class="swiper-slide"><p class="title">150 Aeos Tickets<br><img src="images/battlepass/aeostickets.png"></div>
+        <div class="swiper-slide"><p class="title">Vivid Style:<br>Headwear ♀<img src="images/battlepass/3/female.png"></div>
+        <div class="swiper-slide"><p class="title">150 Aeos Tickets<br><img src="images/battlepass/aeostickets.png"></div>
+        <div class="swiper-slide"><p class="title"><p class="title">15 Item Enhancers<br><img src="images/battlepass/itemenhancer.png"></div>
+        <div class="swiper-slide"><p class="title">150 Aeos Tickets<br><img src="images/battlepass/aeostickets.png"></div>
+        <div class="swiper-slide"><p class="title"><p class="title">15 Item Enhancers<br><img src="images/battlepass/itemenhancer.png"></div>
+        <div class="swiper-slide"><p class="title"><p class="title">15 Item Enhancers<br><img src="images/battlepass/itemenhancer.png"></div>
+        <div class="swiper-slide"><p class="title">15 Item Enhancers<br><img src="images/battlepass/itemenhancer.png"></div>
+        <div class="swiper-slide"><p class="title">15 Item Enhancers<br><img src="images/battlepass/itemenhancer.png"></div>
+        <div class="swiper-slide"><p class="title">15 Item Enhancers<br><img src="images/battlepass/itemenhancer.png"></div>	
+        <div class="swiper-slide"><p class="title">15 Item Enhancers<br><img src="images/battlepass/itemenhancer.png"></div>		
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -35,11 +38,16 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 6,
-        spaceBetween: 30,
-        freeMode: true,
+        spaceBetween: 20,
+        freemode: true,
+        mousewheel: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
